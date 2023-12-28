@@ -1,6 +1,5 @@
 // OpenWeatherMap API key
-const API_KEY = "357a8d0f267d897e2e19b8a474c00a5c";
-
+import { API_KEY } from "./apikey.js";
 // When the button is clicked it calls the fetchWeather function
 const searchBtn = document.querySelector("#search-btn");
 searchBtn.addEventListener("click", (e) => {
