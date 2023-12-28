@@ -5,7 +5,7 @@ body {
     background: url(https://source.unsplash.com/random/1600x900/?nature);
     /* background: #ebf2fa; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
@@ -60,7 +60,9 @@ span {
     color: white;
     /* background-color: #0471a6; */
     width: 450px;
-    padding: 25px;
+    /* padding: 25px; */
+    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
