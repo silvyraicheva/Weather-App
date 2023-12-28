@@ -1,14 +1,14 @@
 /* https://coolors.co/04080f-507dbc-a1c6ea-bbd1ea-dae3e5 */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700&display=swap");
+
 body {
     height: 100vh;
-    background: url(https://source.unsplash.com/random/1600x900/?nature);
-    /* background: #ebf2fa; */
+    background: url(https://source.unsplash.com/random/1600x900/?nature)
+        no-repeat;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
@@ -18,31 +18,31 @@ body {
     display: flex;
     flex-direction: column;
     background-color: hsla(0, 0%, 0%, 0.64);
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
+    border-radius: 7px 7px 0 0;
     color: white;
     width: 450px;
     padding: 25px;
 }
+
 .search-bar {
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 2px;
-    border: none;
     border: 1px solid grey;
     color: white;
     background-color: hsla(0, 0%, 0%, 0.19);
     font-family: "Raleway", sans-serif;
     font-size: 15px;
 }
+
 span {
     margin-bottom: 2px;
 }
+
 #search-btn {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid grey;
-    /* background-color: grey; */
     background-color: hsla(0, 0%, 0%, 0.19);
     color: white;
     text-transform: uppercase;
@@ -52,30 +52,27 @@ span {
     font-weight: lighter;
     margin-top: 2px;
 }
+
 #search-btn:hover {
     background-color: hsla(0, 0%, 100%, 0.19);
     color: white;
 }
+
 .weather-card {
     color: white;
-    /* background-color: #0471a6; */
     width: 450px;
-    /* padding: 25px; */
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: hsla(0, 0%, 0%, 0.64);
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
+    border-radius: 0 0 7px 7px;
 }
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.hidden {
     visibility: hidden;
 }
+
 h2 {
     font-size: 40px;
     letter-spacing: 10px;
@@ -90,23 +87,49 @@ h1 {
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.44);
     margin-bottom: 2px;
 }
+
 .desc {
     margin: 0;
     font-size: 20px;
 }
+
 .details {
     display: flex;
-    gap: 30px; /* Adjust the gap value according to your preference */
+    gap: 30px;
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
     font-size: 18px;
 }
 
-/* .humidity {
-    margin-right: 20px;
-} */
-img {
+.weather-img {
     width: 100px;
     height: 100px;
+}
+
+.hourly-container {
+    max-width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hourly-card {
+    padding: 10px;
+    flex: 0 0 auto;
+    margin: 3px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.hourly-card img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
 }
