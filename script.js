@@ -77,7 +77,7 @@ const displayWeather = (data) => {
     )}°C`;
     document.querySelector(".desc").innerHTML = description;
     document.querySelector(".humidity").innerHTML = `Humidity: ${humidity}%`;
-    document.querySelector(".wind").innerHTML = `Wind: ${speed}km/h`;
+    document.querySelector(".wind").innerHTML = `Wind: ${speed}m/s`;
 
     document.querySelector(".weather-card").classList.remove("hidden");
 };
